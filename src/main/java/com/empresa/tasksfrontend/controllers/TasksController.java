@@ -26,8 +26,11 @@ public class TasksController {
     @Value("${app.version}")
     private String VERSION;
 
+    @Value("${backend.path}")
+    private String CONTEXT_PATH;
+
     public String getBackendURL() {
-        return "http://" + BACKEND_HOST + ":" + BACKEND_PORT;
+        return "http://" + BACKEND_HOST + ":" + BACKEND_PORT + "/" + CONTEXT_PATH;
     }
 
     @GetMapping("/")
