@@ -12,6 +12,7 @@
 	<artifactId>tasks-frontend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>tasks-frontend</name>
+	<packaging>war</packaging>
 	<description>Frontend do app de tasks</description>
 	<url/>
 	<licenses>
